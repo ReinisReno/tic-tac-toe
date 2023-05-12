@@ -64,6 +64,7 @@ function resetHandle () {
   for (const cell of cells) {
     cell.textContent = '';
   }
+  localStorage.clear();
   symbol = 'x';
   moves = {};
   hideMessage();
