@@ -51,7 +51,8 @@ class Storage
   }
 
   clear () {
-    localStorage.clear()
+    this.data.entries = {};
+    this.save();
   }
 
 
